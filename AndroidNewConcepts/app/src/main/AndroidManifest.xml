@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.androidnewconcepts"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- Include required permissions for Google Mobile Ads to run-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="com.example.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <permission
+        android:name="com.example.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:name=".AndroidNewConcepts"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".views.SpeakOut"
+            android:label="@string/app_name">
+
+
+        </activity>
+        <activity
+            android:name=".views.TextToSpeechActivity"
+            android:label="@string/app_name">
+
+
+
+        </activity>
+
+        <activity
+            android:name=".views.DBActivity"
+            android:label="@string/app_name">
+
+
+        </activity>
+
+
+        <activity
+            android:name=".views.HomeActivity"
+            android:label="@string/app_name">
+
+
+        </activity>
+        <activity
+            android:name=".views.DemoActivity"
+            android:label="@string/app_name">
+
+
+        </activity>
+
+        <activity
+            android:name=".views.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".views.PinEntryView"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".views.PlacePickerActivity"
+            android:label="@string/app_name">
+        </activity>
+        <!--This meta-data tag is required to use Google Play Services.-->
+        <meta-data android:name="com.google.android.gms.version"
+                   android:value="@integer/google_play_services_version"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key"/>
+
+
+    </application>
+
+</manifest>

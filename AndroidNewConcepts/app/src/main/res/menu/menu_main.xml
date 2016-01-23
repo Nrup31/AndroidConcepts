@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+    <item android:id="@+id/action_no_filter"
+          android:title="@string/action_no_filter"
+          android:orderInCategory="100"
+          />
+
+    <item android:id="@+id/action_geo_code_filter"
+          android:title="@string/action_geo_code_filter"
+          android:orderInCategory="100"
+    />
+
+    <item android:id="@+id/action_address_filter"
+          android:title="@string/action_address_filter"
+          android:orderInCategory="100"
+    />
+
+    <item android:id="@+id/action_establishment_filter"
+          android:title="@string/action_establishment_filter"
+          android:orderInCategory="100"
+    />
+
+    <item android:id="@+id/action_regions_filter"
+          android:title="@string/action_regions_filter"
+          android:orderInCategory="100"
+    />
+    <item android:id="@+id/action_city_filter"
+          android:title="@string/action_city_filter"
+          android:orderInCategory="100"
+    />
+    <item android:id="@+id/action_place_picker"
+          android:title="@string/action_place_picker"
+          android:orderInCategory="100"
+    />
+    <item android:id="@+id/action_pinView"
+          android:title="@string/action_pin_view"
+          android:orderInCategory="100"
+    />
+</menu>
